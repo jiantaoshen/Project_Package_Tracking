@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# 📦 React Dropdown Order List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive React component that fetches order data from an API and displays it in a dropdown (accordion-style) list.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+* Fetch data from external API
+* Dropdown (accordion) UI for each item
+* Status-based color styling
+* Grid layout (3 fields per row)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📸 UI Behavior
 
-### `npm test`
+* Each item shows **sender name + status**
+* Click to expand and view detailed information
+* Only one item opens at a time
+* Responsive Design
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* React (Hooks: `useState`, `useEffect`)
+* CSS (Flexbox + Grid)
+* Fetch API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔌 API
 
-### `npm run eject`
+Example API used:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+https://my.api.mockaroo.com/orders.json?key=e49e6840
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📦 Example Data
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Each item contains:
 
-## Learn More
+* sender
+* status
+* eta
+* parcel_id
+* location_name
+* coordinates
+* user info
+* notes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎨 Status Styling
 
-### Code Splitting
+| Status     | Color  |
+| ---------- | ------ |
+| delivered   | Green  |
+| ready-for-pickup | Orange |
+| others     | Gray   |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🧠 Key Concepts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* **State-driven UI**: React re-renders when state updates
+* **Props**: Passing fetched data to child component
+* **Conditional rendering**: Show/hide dropdown content
+* **CSS Grid**: Structured layout for item details
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
