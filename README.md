@@ -25,8 +25,9 @@ A responsive React component that fetches order data from an API and displays it
 ## 🛠️ Tech Stack
 
 * React (Hooks: `useState`, `useEffect`)
-* CSS (Flexbox + Grid)
+* Bootstrap
 * Fetch API
+
 
 
 ## 🔌 API

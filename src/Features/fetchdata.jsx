@@ -13,9 +13,15 @@ function FetchApi({UrlAPI}) {
 
   return (
     <div>
+      {!data.length ? (
+        <div className="container py-4 text-center text-muted">
+          Loading parcels...
+        </div>
+      ) : (
         <DropdownList data={data} />
+      )}
     </div>
-    );
+  );
 }
 
 export default FetchApi;
