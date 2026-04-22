@@ -1,6 +1,5 @@
 {
   "name": "frontend",
-  "homepage": "https://jiantaoshen.github.io/Project_Package_Tracking/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
